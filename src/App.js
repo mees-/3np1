@@ -69,6 +69,10 @@ function App() {
               <td>{min}</td>
             </tr>
             <tr>
+              <td>Sum</td>
+              <td>{sum}</td>
+            </tr>
+            <tr>
               <td>consecutive evens</td>
               <td>{longestEvenLength}</td>
             </tr>
