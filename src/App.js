@@ -1,19 +1,10 @@
-import { useEffect, useState } from "react"
+import { useMemo, useState } from "react"
 import { threeNPonePath } from "./lib"
 
 function App() {
   const [inputNum, setInputNum] = useState(1)
-  const [path, setPath] = useState([inputNum])
-  const changeInputNum = num => {
-    setInputNum(num)
-    setPath(null)
-  }
 
-  useEffect(() => {
-    if (path === null) {
-      setPath(threeNPonePath(inputNum))
-    }
-  }, [path, inputNum])
+  const path = useMemo(() => threeNPonePath(inputNum), [inputNum])
 
   return (
     <div className="App">
@@ -24,10 +15,10 @@ function App() {
           value={inputNum}
           onChange={event => {
             const value = parseInt(event.target.value)
-            changeInputNum(value)
+            setInputNum(value)
           }}
         ></input>
-        <button onClick={() => changeInputNum(inputNum + 1)}>next</button>
+        <button onClick={() => setInputNum(inputNum + 1)}>next</button>
 
         <table>
           <thead>
