@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <div className="card">
+        <h3>3n+1</h3>
         <input
           type="number"
           value={inputNum}
