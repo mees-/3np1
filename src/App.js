@@ -10,6 +10,9 @@ function App() {
     <div className="App">
       <div className="card">
         <h3>3n+1</h3>
+        <div className="explanation">
+          <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">Explanation</a>
+        </div>
         <input
           type="number"
           value={inputNum}
