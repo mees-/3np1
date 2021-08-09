@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-import SWorker from "simple-web-worker"
-import { threeNPoneWebWorker, threeNPonePath } from "./lib"
+import { threeNPonePath } from "./lib"
 
 function App() {
   const [inputNum, setInputNum] = useState(1)
