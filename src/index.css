@@ -6,7 +6,7 @@ body,
   font-family: "Roboto Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .App {
@@ -28,4 +28,8 @@ body,
 
 .App table {
   margin: auto;
+}
+
+.num-even {
+  background-color: #bbbbbb;
 }

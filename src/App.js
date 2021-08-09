@@ -90,7 +90,7 @@ function App() {
               path.map((number, index) => (
                 <tr key={index}>
                   <td>{index}</td>
-                  <td>{number}</td>
+                  <td className={`num-${number % 2 === 0 ? "even" : "odd"}`}>{number}</td>
                 </tr>
               ))
             ) : (
