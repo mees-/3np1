@@ -27,26 +27,30 @@ function App() {
           }}
         ></input>
         <button onClick={() => changeInputNum(inputNum + 1)}>next</button>
-        {path != null ? (
-          <table>
-            <thead>
-              <tr>
-                <th>Step</th>
-                <th>number</th>
-              </tr>
-            </thead>
-            <tbody>
-              {path.map((number, index) => (
+
+        <table>
+          <thead>
+            <tr>
+              <th>Step</th>
+              <th>number</th>
+            </tr>
+          </thead>
+          <tbody>
+            {path !== null ? (
+              path.map((number, index) => (
                 <tr key={index}>
                   <td>{index}</td>
                   <td>{number}</td>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        ) : (
-          <p>loading</p>
-        )}
+              ))
+            ) : (
+              <tr>
+                <td>0</td>
+                <td>{inputNum}</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
       </div>
     </div>
   )
