@@ -1,0 +1,9 @@
+{
+  "short_name": "3n+1",
+  "name": "Three N plus one",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
