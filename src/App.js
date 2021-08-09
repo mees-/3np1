@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="card">
-        <h3>3n+1</h3>
+        <h1>3n+1</h1>
         <div className="explanation">
           <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">Explanation</a>
         </div>
