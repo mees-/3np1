@@ -33,3 +33,12 @@ body,
 .num-even {
   background-color: #eeeeee;
 }
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  margin: 0 1em;
+}
